@@ -9,8 +9,8 @@ import logging
 PPRINT = pprint.PrettyPrinter(indent=4)
 
 
-MAX_CRAWLER_PAGES = 10
-CRAWLER_SLEEP_TIME = 5
+MAX_CRAWLER_PAGES = 601
+CRAWLER_SLEEP_TIME = 30
 UPWORK_MAIN_WEBSITE = 'https://www.upwork.com'
 UPWORK_CRAWLER_WEBSITE_FORMAT = UPWORK_MAIN_WEBSITE + '/o/profiles/browse/api/search?c=web-mobile-software-dev&pt=independent&page={0}'
 
@@ -20,7 +20,7 @@ RESULT_FILE_PREFIX = 'data.json'
 
 # ----- Internal use so user shouldn't change below parameter -----
 os.environ['MOZ_HEADLESS'] = '1'
-CAPTUA_WAIT_TIME = 20
+CAPTUA_WAIT_TIME = 60
 CAPTUA_RETRY_TIME = 5
 KEY_FL_NAME = 'name'
 KEY_FL_LINK = 'link'
