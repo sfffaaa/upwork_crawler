@@ -80,7 +80,7 @@ class Freelancer():
         return json.dumps(vars(self))
 
     def __repr__(self):
-        return self.__str__()
+        return '<Freelancer {0}>'.format(self.__str__())
 
 
 class MyJsonCoventor(json.JSONEncoder):
